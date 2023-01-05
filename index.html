@@ -5,62 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/layout.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; padding-top: 2rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how
-    developers think is invaluable.</p>
-
-    <div class="p-holder">
-      <p>Try it free 7 days <span>then<br>$20/mo. thereafter</span></p>
+  <div class="container flex">
+    <div class="column-half text-content">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding
+        how developers think is invaluable.</p>
     </div>
-    <div class="form-holder">
-      <form id="sign-up-form">
-        <input
-        required
-        name="name"
-        type="text"
-        id="user-first-name"
-        placeholder="First Name">
+    <div class="column-half">
+      <div class="p-holder">
+        <p class="p-text-mobile">Try it free 7 days <span>then<br>$20/mo. thereafter</span></p>
+        <p class="p-text-desktop">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+      </div>
+      <div class="form-holder">
+        <form id="sign-up-form">
+          <input required name="name" type="text" id="user-first-name" placeholder="First Name">
 
-        <input
-        required
-        name="name"
-        type="text"
-        id="user-last-name"
-        placeholder="Last Name">
+          <input required name="name" type="text" id="user-last-name" placeholder="Last Name">
 
-        <input
-        required
-        name="email"
-        type="email"
-        id="user-email"
-        placeholder="Email Address">
+          <input required name="email" type="email" id="user-email" placeholder="Email Address">
 
-        <input
-        required
-        name="email"
-        type="email"
-        id="user-password"
-        placeholder="Password">
+          <input required name="email" type="email" id="user-password" placeholder="Password">
 
-        <div class="submit-btn-div">
-          <button type="submit">Claim your free trial</button>
-        </div>
-        <p style="color: hsl(246, 25%, 77%); font-size: 0.7rem; font-weight: 400; line-height: 1.3rem; padding: 0.8rem 1.8rem 0; ">By clicking the button, you are agreeing to our <span style="color: hsl(0, 100%, 74%); font-weight: 600">Terms and Services</span></p>
-      </form>
+          <div class="submit-btn-div">
+            <button type="submit">Claim your free trial</button>
+          </div>
+          <p
+          style="color: hsl(246, 25%, 77%); font-size: 0.7rem; font-weight: 400; line-height: 1.3rem; padding: 0.8rem 1.8rem 0; ">
+            By clicking the button, you are agreeing to our <span style="color: hsl(0, 100%, 74%); font-weight: 600">Terms and
+            Services</span></p>
+        </form>
+      </div>
     </div>
   </div>
   <footer>
-    <p class="attribution">
+    <p class="attribution p-text-mobile">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       <br>Coded by <a href="https://github.com/yuliia-p">Yuliia Pchelintseva</a>.
+    </p>
+    <p class="attribution p-text-desktop">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/yuliia-p">Yuliia Pchelintseva</a>.
     </p>
   </footer>
   <script src="./js/main.js"></script>
