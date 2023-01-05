@@ -1,0 +1,10 @@
+@media screen and (min-width: 756px) {
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .column-half {
+    flex-basis: 50%;
+  }
+}
