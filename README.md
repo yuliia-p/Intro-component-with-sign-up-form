@@ -4,7 +4,11 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<p align="middle">
+<img src="./images/desktop.png" width="1000">
+<img src="./images/mobile.png" width="300">
+<img src="./images/mobile-1.png" width="300">
+</p>
 
 ### Links
 
